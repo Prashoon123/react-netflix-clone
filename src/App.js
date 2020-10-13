@@ -2,11 +2,14 @@ import React from 'react';
 import './App.css';
 import Row from './Row';
 import requests from './requests';
+import Banner from './Banner';
 
 function App() {
   return (
     // BEM naming convention
     <div className="app">
+      {/* Navbar */}
+      <Banner />
       <Row 
         title="NETFLIX ORIGINALS" 
         fetchUrl={requests.fetchNetflixOriginals} 

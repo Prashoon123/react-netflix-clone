@@ -12,14 +12,11 @@ function Row({ title, fetchUrl, isLargeRow }) {
         // if [], run once when row loads, and don't run it again
         async function fetchData() {
             const request = await axios.get(fetchUrl);
-            console.log(request.data.results);
             setMovies(request.data.results);
             return request;
         }
         fetchData();
     }, [fetchUrl]);
-
-    console.table(movies);
 
     return (
         // BEM naming convention
