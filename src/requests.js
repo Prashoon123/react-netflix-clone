@@ -1,4 +1,4 @@
-const API_KEY = "5b0d52f53bdfd5419da3f3e614ae199f";
+const API_KEY = /* ENTER YOUR TMDB API KEY HERE, TO CREATE ONE CLICK THIS LINK -> https://www.themoviedb.org/settings/api/request */
 
 const requests = {
     fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
