@@ -3,12 +3,13 @@ import './App.css';
 import Row from './Row';
 import requests from './requests';
 import Banner from './Banner';
+import Nav from './Nav';
 
 function App() {
   return (
     // BEM naming convention
     <div className="app">
-      {/* Navbar */}
+      <Nav />
       <Banner />
       <Row 
         title="NETFLIX ORIGINALS" 
